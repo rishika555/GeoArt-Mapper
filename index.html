@@ -1,0 +1,32 @@
+
+<!--python -m http.server-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GeoArt Mapper</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🗺️ GeoArt Mapper</h1>
+    <label for="placeType">Choose place type: </label>
+<select id="placeType">
+    <option value="">Select</option>
+  <option value="restaurant">Restaurant</option>
+  <option value="museum">Museum</option>
+  <option value="park">Park</option>
+  <option value="hospital">Hospital</option>
+  <option value="college">College</option>
+</select>
+<button id="loadPlaces">Find Nearby</button>
+
+    <canvas id="mapCanvas" width="300" height="300"></canvas>
+    <div id="placesContainer"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

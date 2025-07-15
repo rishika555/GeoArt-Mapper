@@ -1,0 +1,87 @@
+/* style.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(-45deg, #71a1c1, #afa9c5, #348bc5, #41e9bd);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent card */
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  max-width: 500px;
+  width: 90%;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #00ffff;
+}
+
+label {
+  font-weight: 500;
+}
+
+#placeType {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  margin: 0 10px;
+  font-size: 1rem;
+}
+
+#loadPlaces {
+  padding: 8px 16px;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #00ffff;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#loadPlaces:hover {
+  background-color: #00d6d6;
+}
+
+#mapCanvas {
+  margin-top: 1.5rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #00ffff;
+}
+
+#placesContainer {
+  margin-top: 1.5rem;
+  text-align: left;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+#placesContainer div {
+  background-color: rgba(255, 255, 255, 0.15);
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+  border-left: 4px solid #00ffff;
+}
